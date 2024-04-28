@@ -4,21 +4,17 @@ import { Button } from "@/components/ui/button";
 import { useUser } from '@clerk/nextjs';
 import { useEffect } from "react";
 import { redirect } from "next/navigation";
-import { useAuthContext } from "@/providers/authContext";
+import { AuthProvider } from "@/providers/authContext";
+type Props = {children:React.ReactNode}
 
-export default function Home() {
-  const {checkAboutUser}=useAuthContext();
-  useEffect(()=>{
-    checkAboutUser()
+export default function Home(props:Props) {
 
-  },[])
+  const user=useUser();
 
 
 
   return (
-
-   <Button>
-    click ME :smiles
-   </Button>
+  
+    <p>testin</p>
   );
 }

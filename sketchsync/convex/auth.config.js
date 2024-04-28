@@ -1,7 +1,7 @@
 export default {
     providers: [
       {
-        domain: "https://actual-bass-34.clerk.accounts.dev",
+        domain: "https://enabled-seahorse-64.clerk.accounts.dev",
         applicationID: "convex",
       },
     ]
